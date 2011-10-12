@@ -13,4 +13,4 @@ require('https').createServer(options, require('stack')(
 		var pathname = url.parse(req.url).pathname;
 		console.log ("path : " + pathname)
   })
-).listen(443, "git.pagodabox.com");
+).listen(443, "50.97.133.246");
