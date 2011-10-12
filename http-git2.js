@@ -7,14 +7,10 @@ var options = {
     ,cert: fs.readFileSync('tmp/pem.cert')
 }
 
-require('http').createServer(require('stack')(
+require('https').createServer(options, require('stack')(
 	function(req, res, next) {
 		console.log("HEADERS: " + JSON.stringify(req.headers))
 		var pathname = url.parse(req.url).pathname;
 		console.log ("path : " + pathname)
-  }, 
-  gitweb('/', {
-      projectroot: '/mnt/git',
-      max_depth: 2
-    })
-)).listen(8080);
+  })
+).listen(443, "git.pagodabox.com");
