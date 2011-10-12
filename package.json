@@ -1,0 +1,14 @@
+{
+  "author": "Lyon Hill <lyondhill@gmail.com>",
+  "name": "http-git",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lyondhill/http-git.git"
+  },
+  "engines": {
+    "node": "~0.4.12"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
