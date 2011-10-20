@@ -1,5 +1,6 @@
 var fs = require('fs')
-var url = require("url");
+var url = require("url")
+var cgi = require('cgi');
 
 var options = {
     key: fs.readFileSync('tmp/pem.key')
