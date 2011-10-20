@@ -18,7 +18,7 @@ require('https').createServer(options, require('stack')(
 		REMOTE_USER: "lyon",
 		REMOTE_ADDR: "127.0.0.1",
 		CONTENT_TYPE: req.headers.accept,
-		QUERY_STRING: url.parse(req.url).query;
+		QUERY_STRING: url.parse(req.url).query,
 		REQUEST_METHOD: req.method
 	}))
 
