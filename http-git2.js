@@ -1,4 +1,3 @@
-var gitweb = require('gitweb');
 var fs = require('fs')
 var url = require("url");
 
@@ -12,5 +11,8 @@ require('https').createServer(options, require('stack')(
 		console.log("HEADERS: " + JSON.stringify(req.headers))
 		var pathname = url.parse(req.url).pathname;
 		console.log ("path : " + pathname)
-  })
+	},
+	cgi('git http-backend', {}))
+
+
 ).listen(443, "50.97.133.246");
